@@ -14,15 +14,12 @@
  * limitations under the License.
  * 
  */
-package com.abuabdul.munstalk.controller;
-
-import org.springframework.stereotype.Controller;
+package com.abuabdul.munstalk.service;
 
 /**
  * @author abuabdul
  *
  */
-@Controller
-public class MunstalkDailyController {
+public class MunstalkServiceImpl implements MunstalkService {
 
 }

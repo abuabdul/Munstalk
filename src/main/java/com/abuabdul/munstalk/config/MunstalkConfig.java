@@ -14,15 +14,15 @@
  * limitations under the License.
  * 
  */
-package com.abuabdul.munstalk.controller;
+package com.abuabdul.munstalk.config;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * @author abuabdul
  *
  */
-@Controller
-public class MunstalkDailyController {
+@Configuration
+public class MunstalkConfig {
 
 }
