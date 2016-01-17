@@ -14,12 +14,19 @@
  * limitations under the License.
  * 
  */
-package com.abuabdul.munstalk.controller;
+package com.abuabdul.munstalk.dao;
+
+import org.mockito.MockitoAnnotations;
+import org.testng.annotations.BeforeMethod;
 
 /**
  * @author abuabdul
  *
  */
-public class MunstalkDailyControllerTest {
+public class MunstalkDAOTest {
 
+	@BeforeMethod
+	public void initMocks() {
+		MockitoAnnotations.initMocks(this);
+	}
 }
