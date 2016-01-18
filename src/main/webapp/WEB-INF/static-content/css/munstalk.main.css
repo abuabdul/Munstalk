@@ -1,0 +1,120 @@
+/*
+ * Copyright 2013-2016 abuabdul.com
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * 
+ */
+
+/*
+ *
+ * @project   Note-Dovn App
+ * @date      18-Dec-2015
+ * @author    Abubacker Siddik A, Chennai, India <abuabdul86@hotmail.com>
+ * @licensor  Apache License 2.0
+ * @site      
+ *
+ */
+
+
+.brand-logo{
+	color: #26ADA1;
+}
+
+.scroll-arrow {
+    font-size: 20px;
+}
+
+.buffer-bottom {
+	margin-bottom: 5px;
+}
+
+.no-border {
+	border: 0px #fff solid;
+	background-color: #fff;
+	color: #3C5B45;
+}
+
+.note {
+    text-decoration: none;
+    background: #FFF none repeat scroll 0% 0%;
+    display: block;
+    padding: 20px;
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+    transform: rotate(-6deg);
+    font-size: 16px;
+}
+
+.glyphicon.medium {
+	font-size: 27px;
+}
+
+#errorPage{
+	color: #B74934;
+}
+
+/* Override theme css */
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #3C5B45;
+}
+
+.navbar-brand {
+    font-size: 19px;
+    line-height: 20px;
+}
+
+.navbar-default{
+	background-color: #CED9BC;
+	border-color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #3C5B45;
+}
+
+.btn-primary {
+    background: #3C5B45;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #3C5B45;
+}
+
+.tooltip-inner {
+	max-width: 100%;
+	background-color: #3C5B45;
+}
+
+.tooltip.top .tooltip-arrow {
+	border-top-color: #3C5B45;
+}
+
+.editable-click, a.editable-click, a.editable-click:hover {
+    text-decoration: none;
+    border-bottom: 0px;
+}
+
+a {
+	color: inherit;
+}
+ 
+/* 
+* Referred Theme Page
+* http://www.lavishbootstrap.com/?image_url=http://design-seeds.com/palettes/GrassColor510.png 
+*/

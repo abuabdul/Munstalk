@@ -167,7 +167,7 @@
 				<version>2.1</version>
 				<configuration>
 					<address>localhost</address>
-					<port>8695</port>
+					<port>9225</port>
 					<path>/${project.build.finalName}</path>
 					<uriEncoding>${project.build.sourceEncoding}</uriEncoding>
 				</configuration>
