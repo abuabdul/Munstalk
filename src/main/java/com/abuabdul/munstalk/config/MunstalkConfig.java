@@ -23,6 +23,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.mongodb.core.MongoTemplate;
 
+import com.abuabdul.munstalk.dao.MunstalkDAO;
+import com.abuabdul.munstalk.dao.MunstalkDAOImpl;
+import com.abuabdul.munstalk.service.MunstalkService;
+import com.abuabdul.munstalk.service.MunstalkServiceImpl;
+
 /**
  * @author abuabdul
  *
@@ -44,5 +49,15 @@ public class MunstalkConfig {
 		propertyConfigurer.setSearchSystemEnvironment(true);
 		propertyConfigurer.setSystemPropertiesMode(PropertyPlaceholderConfigurer.SYSTEM_PROPERTIES_MODE_OVERRIDE);
 		return propertyConfigurer;
+	}
+
+	@Bean
+	public MunstalkDAO munstalkDAO() {
+		return new MunstalkDAOImpl(mongoTemplate);
+	}
+
+	@Bean
+	public MunstalkService munstalkService() {
+		return new MunstalkServiceImpl(munstalkDAO());
 	}
 }

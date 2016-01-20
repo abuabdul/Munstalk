@@ -16,10 +16,18 @@
  */
 package com.abuabdul.munstalk.service;
 
+import com.abuabdul.munstalk.dao.MunstalkDAO;
+
 /**
  * @author abuabdul
  *
  */
 public class MunstalkServiceImpl implements MunstalkService {
+
+	private MunstalkDAO munstalkDAO;
+
+	public MunstalkServiceImpl(MunstalkDAO munstalkDAO) {
+		this.munstalkDAO = munstalkDAO;
+	}
 
 }

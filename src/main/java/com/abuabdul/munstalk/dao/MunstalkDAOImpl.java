@@ -16,10 +16,18 @@
  */
 package com.abuabdul.munstalk.dao;
 
+import org.springframework.data.mongodb.core.MongoTemplate;
+
 /**
  * @author abuabdul
  *
  */
 public class MunstalkDAOImpl implements MunstalkDAO {
+
+	private MongoTemplate mongoTemplate;
+
+	public MunstalkDAOImpl(MongoTemplate mongoTemplate) {
+		this.mongoTemplate = mongoTemplate;
+	}
 
 }
