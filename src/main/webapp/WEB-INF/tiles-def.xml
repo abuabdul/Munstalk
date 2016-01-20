@@ -5,16 +5,16 @@
 
 <tiles-definitions>
 	<definition name="base.definition" template="/WEB-INF/layouts/layout.jsp">
-		<put-attribute name="title" value="Note-Dovn - Utility To help pin notes, scratch text" />
+		<put-attribute name="title" value="Munstalk - A Hus Talk" />
 		<put-attribute name="metaTags" value="/WEB-INF/layouts/metaTags.jsp" />
 		<put-attribute name="siteHeaderInclude" value="/WEB-INF/jsp/includes/headerinclude.jsp"/>
-		<put-attribute name="topmenu" value="/WEB-INF/jsp/fixedTopMenu.jsp"/>
+		<put-attribute name="topmenu" value="/WEB-INF/layouts/blank.jsp"/>
 		<put-attribute name="body" value="/WEB-INF/layouts/blank.jsp" />
 		<put-attribute name="siteFooterInclude" value="/WEB-INF/jsp/includes/footerinclude.jsp" />
 	</definition>
 	
-	<definition name="notedovnPad" extends="base.definition">
-		<put-attribute name="body" value="/WEB-INF/jsp/notedovnPad.jsp" />
+	<definition name="munstalkChat" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/munstalkChat.jsp" />
 	</definition>
 	
 	

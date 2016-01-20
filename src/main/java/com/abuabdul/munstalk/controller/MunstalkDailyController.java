@@ -16,7 +16,13 @@
  */
 package com.abuabdul.munstalk.controller;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.abuabdul.munstalk.service.MunstalkService;
 
 /**
  * @author abuabdul
@@ -24,5 +30,22 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class MunstalkDailyController {
+
+	private static final Logger log = LogManager.getLogger(MunstalkDailyController.class.getName());
+
+	private MunstalkService munstalkService;
+
+	@RequestMapping(value = "/muns/munstalkDaily.go")
+	public String munstalkChat(ModelMap model) {
+		log.debug("Entering munstalkChat() in " + this.getClass().getName());
+		// try {
+		model.addAttribute("munstalkChatWindow", new Object());
+		return "munstalkChat";
+		/*
+		 * } catch (MunstalkServiceException mse) { log.debug(
+		 * "MunstalkServiceException - " + mse.getMessage()); throw new
+		 * MunstalkException(mse.getMessage()); }
+		 */
+	}
 
 }

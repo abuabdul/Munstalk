@@ -16,7 +16,12 @@
  */
 package com.abuabdul.munstalk.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.data.mongodb.core.MongoTemplate;
 
 /**
  * @author abuabdul
@@ -25,4 +30,19 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MunstalkConfig {
 
+	private static final String APPCONFIG_FILE_NAME = "Appconfig.properties";
+
+	@Autowired
+	private MongoTemplate mongoTemplate;
+
+	@Bean
+	public static PropertyPlaceholderConfigurer propertyPlaceholderConfigurer() {
+		PropertyPlaceholderConfigurer propertyConfigurer = new PropertyPlaceholderConfigurer();
+		propertyConfigurer.setLocation(new ClassPathResource(APPCONFIG_FILE_NAME));
+		propertyConfigurer.setIgnoreResourceNotFound(false);
+		propertyConfigurer.setIgnoreUnresolvablePlaceholders(true);
+		propertyConfigurer.setSearchSystemEnvironment(true);
+		propertyConfigurer.setSystemPropertiesMode(PropertyPlaceholderConfigurer.SYSTEM_PROPERTIES_MODE_OVERRIDE);
+		return propertyConfigurer;
+	}
 }

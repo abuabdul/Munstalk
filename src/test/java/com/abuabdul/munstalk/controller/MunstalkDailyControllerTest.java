@@ -16,10 +16,39 @@
  */
 package com.abuabdul.munstalk.controller;
 
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standaloneSetup;
+
+import org.mockito.InjectMocks;
+import org.mockito.MockitoAnnotations;
+import org.springframework.test.web.servlet.MockMvc;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
 /**
  * @author abuabdul
  *
  */
 public class MunstalkDailyControllerTest {
+
+	@InjectMocks
+	private MunstalkDailyController munstalkDailyController;
+
+	private MockMvc mockmvc;
+
+	@BeforeMethod
+	public void init() {
+		MockitoAnnotations.initMocks(this);
+		mockmvc = standaloneSetup(munstalkDailyController).build();
+	}
+
+	@Test
+	public void munstalkChat() throws Exception {
+		mockmvc.perform(post("/muns/munstalkDaily.go")).andExpect(status().isOk())
+				.andExpect(model().attributeExists("munstalkChatWindow")).andExpect(view().name("munstalkChat"));
+	}
 
 }
