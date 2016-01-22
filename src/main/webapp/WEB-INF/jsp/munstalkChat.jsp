@@ -6,16 +6,51 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" href="<c:url value='/resources/css/font-awesome.min.css'/>"> <!-- CSS reset -->
 	<link rel="stylesheet" href="<c:url value='/resources/css/reset.css'/>"> <!-- CSS reset -->
 	<link rel="stylesheet" href="<c:url value='/resources/css/style.css'/>"> <!-- Resource style -->
+	<link rel="stylesheet" href="<c:url value='/resources/css/munstalk.main.css'/>"> <!-- Munstalk style -->
 	<script src="<c:url value='/resources/js/modernizr.js'/>"></script> <!-- Modernizr -->
   	
 	<title>Responsive Vertical Timeline</title>
 </head>
 <body>
 	<header>
-		<h1>Responsive Vertical Timeline</h1>
+	    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	        <div class="container">
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="<c:url value='/scratch/notedovnPad.go'/>">
+	                     <span class="brand-logo">Munstalk</span> 
+	                     <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+	                 </a>
+	            </div>
+	
+	            <%-- Collect the nav links, forms, and other content for toggling --%>
+	            <div class="collapse navbar-collapse navbar-ex1-collapse">
+	                <ul class="nav navbar-nav">
+	                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+	                    <li class="hidden">
+	                        <a href="#"></a>
+	                    </li>
+	                    <li>
+	                        <a href="#"></a>
+	                    </li>
+	                    <li>
+	                        <a href="#"></a>
+	                    </li>
+	                </ul>
+	                <ul class="nav navbar-nav pull-right">
+	                   <li><a href="http://abuabdul.com">&copy; abuabdul.com 2013-2016</span></a>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
 	</header>
 
 	<section id="cd-timeline" class="cd-container">
@@ -98,5 +133,8 @@
 	</section> <!-- cd-timeline -->
 <script src="<c:url value='/resources/js/jquery.min.js'/>"></script>
 <script src="<c:url value='/resources/js/main.js'/>"></script> <!-- Resource jQuery -->
+<script src="<c:url value='/resources/js/jquery.easing.min.js'/>"></script>
+<script src="<c:url value='/resources/js/scrolling-nav.js'/>"></script>
+<script src="<c:url value='/resources/js/munstalk.main.js'/>"></script> <!-- Resource jQuery -->
 </body>
 </html>
