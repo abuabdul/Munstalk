@@ -1,5 +1,4 @@
 <%@ include file="/WEB-INF/jsp/includes/siteTags.jsp"%>
-<body>
 	<section id="cd-timeline" class="cd-container">
 		<div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-picture">
@@ -78,5 +77,3 @@
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 	</section> <!-- cd-timeline -->
-</body>
-</html>

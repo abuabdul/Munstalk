@@ -6,7 +6,6 @@
 <script src="<c:url value='/resources/js/modernizr.js'/>"></script> <!-- Modernizr -->
 
 <!-- Scrolling Nav JavaScript -->
-<script src="<c:url value='/resources/js/jquery.easing.min.js'/>"></script>
 <script src="<c:url value='/resources/js/scrolling-nav.js'/>"></script>
 
 <!-- Bootstrap Core JavaScript -->

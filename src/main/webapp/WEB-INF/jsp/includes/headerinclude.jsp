@@ -14,9 +14,6 @@
 <!-- For Bootstrap Validator -->
 <link href="<c:url value='/resources/css/bootstrapValidator.min.css'/>" rel="stylesheet"/>
 
-<!-- Scrolling Nav -->
-<link href="<c:url value='/resources/css/scrolling-nav.css'/>" rel="stylesheet">
-
 <!-- Munstalk style -->
 <link rel="stylesheet" href="<c:url value='/resources/css/munstalk.main.css'/>"> 
 

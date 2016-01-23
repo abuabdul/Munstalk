@@ -9,7 +9,7 @@
 	                    <span class="icon-bar"></span>
 	                    <span class="icon-bar"></span>
 	                </button>
-	                <a class="navbar-brand" href="<c:url value='/scratch/notedovnPad.go'/>">
+	                <a class="navbar-brand" href="<c:url value='/muns/munstalkDaily.go'/>">
 	                     <span class="brand-logo">Munstalk</span> 
 	                     <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
 	                 </a>
@@ -18,15 +18,14 @@
 	            <%-- Collect the nav links, forms, and other content for toggling --%>
 	            <div class="collapse navbar-collapse navbar-ex1-collapse">
 	                <ul class="nav navbar-nav">
-	                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-	                    <li class="hidden">
-	                        <a href="#"></a>
+	                    <li>
+	                        <a href="#">Search</a>
 	                    </li>
 	                    <li>
-	                        <a href="#"></a>
+	                        <a href="#">Filter</a>
 	                    </li>
 	                    <li>
-	                        <a href="#"></a>
+	                        <a href="#">Clear</a>
 	                    </li>
 	                </ul>
 	                <ul class="nav navbar-nav pull-right">
