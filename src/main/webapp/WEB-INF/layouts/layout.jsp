@@ -7,7 +7,7 @@
 <title><tiles:insertAttribute name="title" ignore="true" /></title>
 <tiles:insertAttribute name="siteHeaderInclude"/>
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body>
 	<tiles:insertAttribute name="topmenu"/>
 	<tiles:insertAttribute name="body"/>
 	<tiles:insertAttribute name="siteFooterInclude"/>

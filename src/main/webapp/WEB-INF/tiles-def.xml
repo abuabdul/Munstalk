@@ -8,7 +8,7 @@
 		<put-attribute name="title" value="Munstalk - A Hus Talk" />
 		<put-attribute name="metaTags" value="/WEB-INF/layouts/metaTags.jsp" />
 		<put-attribute name="siteHeaderInclude" value="/WEB-INF/jsp/includes/headerinclude.jsp"/>
-		<put-attribute name="topmenu" value="/WEB-INF/layouts/blank.jsp"/>
+		<put-attribute name="topmenu" value="/WEB-INF/jsp/fixedTopMenu.jsp"/>
 		<put-attribute name="body" value="/WEB-INF/layouts/blank.jsp" />
 		<put-attribute name="siteFooterInclude" value="/WEB-INF/jsp/includes/footerinclude.jsp" />
 	</definition>
