@@ -22,6 +22,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.abuabdul.munstalk.document.model.MunstalkGlobalAvatar;
 import com.abuabdul.munstalk.service.MunstalkService;
 
 /**
@@ -38,15 +39,11 @@ public class MunstalkDailyController {
 	@RequestMapping(value = "/muns/avatars.go")
 	public String munstalkAvatars(ModelMap model) {
 		log.debug("Entering munstalkAvatars() in " + this.getClass().getName());
-		// try {
-		model.addAttribute("munstalkChatWindow", new Object());
+		model.addAttribute("munstalkAvatar", new MunstalkGlobalAvatar());
 		return "munstalkAvatar";
-		/*
-		 * } catch (MunstalkServiceException mse) { log.debug(
-		 * "MunstalkServiceException - " + mse.getMessage()); throw new
-		 * MunstalkException(mse.getMessage()); }
-		 */
 	}
+
+	/// secure/muns/incarnate/avatar.go
 
 	@RequestMapping(value = "/muns/munstalkDaily.go")
 	public String munstalkChat(ModelMap model) {

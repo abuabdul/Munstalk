@@ -24,8 +24,8 @@
  * @site      
  *
  */
- 
-/* Theme override */ 
+
+/* Theme override */
 @media ( min-width :767px) {
 	.navbar {
 		padding: 20px 0;
@@ -44,14 +44,64 @@
 	border: 0px none;
 }
 
-.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover,
-	.navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav>li>a, 
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
 	background-color: #303e49;
 	color: #fff;
 }
 
-/* Munstalk App Styles */
+.btn-default {
+	color: #333;
+	background-color: #FFF;
+	border-color: #CCC;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+}
 
+.btn-default:hover {
+	color: #333;
+	background-color: #E6E6E6;
+	border-color: #ADADAD;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+}
+
+.btn-default.active {
+	background-color: #75ce66;
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+}
+
+.btn-primary {
+	background-color: #75ce66;
+	border: 0px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+}
+
+.btn-primary:hover {
+	background-color: #c03b44; 
+	border: 0px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+}
+
+.tooltip-inner {
+	max-width: 100%;
+	background-color: #303e49;
+}
+
+.tooltip.left .tooltip-arrow {
+	border-left-color: #303e49;
+}
+
+.tooltip.right .tooltip-arrow {
+	border-right-color: #303e49;
+}
+
+/* Munstalk App Styles */
 header span {
 	color: white;
 	font-size: 22px;
@@ -59,31 +109,7 @@ header span {
 }
 
 .avatar-div {
-    padding-top: 20px;
-    padding-bottom: 20px;	
-    text-align:center
+	padding-top: 50px;
+	padding-bottom: 20px;
+	text-align: center;
 }
-
-.btn-default {
-    color: #333;
-    background-color: #FFF;
-    border-color: #CCC;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-}
-
-.btn-default:hover {
-    color: #333;
-    background-color: #E6E6E6;
-    border-color: #ADADAD;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-}
-
-.btn-default.active {
-	background-color: #c03b44;
-	color: #fff;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-}
-

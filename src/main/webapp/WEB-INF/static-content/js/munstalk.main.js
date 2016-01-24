@@ -24,3 +24,7 @@
  * @site      
  *
  */
+
+$(function () {
+	  $('[data-toggle="tooltip"]').tooltip();
+});
