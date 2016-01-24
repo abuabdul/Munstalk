@@ -46,6 +46,12 @@ public class MunstalkDailyControllerTest {
 	}
 
 	@Test
+	public void munstalkAvatars() throws Exception {
+		mockmvc.perform(post("/muns/avatars.go")).andExpect(status().isOk())
+				.andExpect(model().attributeExists("munstalkChatWindow")).andExpect(view().name("munstalkAvatar"));
+	}
+
+	@Test
 	public void munstalkChat() throws Exception {
 		mockmvc.perform(post("/muns/munstalkDaily.go")).andExpect(status().isOk())
 				.andExpect(model().attributeExists("munstalkChatWindow")).andExpect(view().name("munstalkChat"));

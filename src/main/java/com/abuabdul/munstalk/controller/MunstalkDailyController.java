@@ -35,6 +35,19 @@ public class MunstalkDailyController {
 
 	private MunstalkService munstalkService;
 
+	@RequestMapping(value = "/muns/avatars.go")
+	public String munstalkAvatars(ModelMap model) {
+		log.debug("Entering munstalkAvatars() in " + this.getClass().getName());
+		// try {
+		model.addAttribute("munstalkChatWindow", new Object());
+		return "munstalkAvatar";
+		/*
+		 * } catch (MunstalkServiceException mse) { log.debug(
+		 * "MunstalkServiceException - " + mse.getMessage()); throw new
+		 * MunstalkException(mse.getMessage()); }
+		 */
+	}
+
 	@RequestMapping(value = "/muns/munstalkDaily.go")
 	public String munstalkChat(ModelMap model) {
 		log.debug("Entering munstalkChat() in " + this.getClass().getName());
@@ -47,5 +60,4 @@ public class MunstalkDailyController {
 		 * MunstalkException(mse.getMessage()); }
 		 */
 	}
-
 }

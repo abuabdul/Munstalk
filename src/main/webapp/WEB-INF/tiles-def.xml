@@ -13,10 +13,13 @@
 		<put-attribute name="siteFooterInclude" value="/WEB-INF/jsp/includes/footerinclude.jsp" />
 	</definition>
 	
+	<definition name="munstalkAvatar" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/munstalkAvatars.jsp" />
+	</definition>
+	
 	<definition name="munstalkChat" extends="base.definition">
 		<put-attribute name="body" value="/WEB-INF/jsp/munstalkChat.jsp" />
 	</definition>
-	
 	
 	<!-- Error page views start -->
 	<definition name="generic/error" extends="base.definition">
