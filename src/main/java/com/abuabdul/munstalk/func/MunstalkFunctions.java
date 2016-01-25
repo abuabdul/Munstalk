@@ -14,34 +14,12 @@
  * limitations under the License.
  * 
  */
-package com.abuabdul.munstalk.dao;
-
-import java.util.List;
-
-import org.springframework.data.mongodb.core.MongoTemplate;
-
-import com.abuabdul.munstalk.document.model.MunstalkGlobalAvatar;
+package com.abuabdul.munstalk.func;
 
 /**
  * @author abuabdul
  *
  */
-public class MunstalkDAOImpl implements MunstalkDAO {
-
-	private MongoTemplate mongoTemplate;
-
-	public MunstalkDAOImpl(MongoTemplate mongoTemplate) {
-		this.mongoTemplate = mongoTemplate;
-	}
-
-	@Override
-	public List<MunstalkGlobalAvatar> findGlobalAvatar() {
-		return mongoTemplate.findAll(MunstalkGlobalAvatar.class);
-	}
-
-	@Override
-	public void saveGlobalAvatar(MunstalkGlobalAvatar avatar) {
-		mongoTemplate.save(avatar);
-	}
+public class MunstalkFunctions {
 
 }

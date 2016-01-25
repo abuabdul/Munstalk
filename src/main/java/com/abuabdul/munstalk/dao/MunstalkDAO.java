@@ -16,10 +16,18 @@
  */
 package com.abuabdul.munstalk.dao;
 
+import java.util.List;
+
+import com.abuabdul.munstalk.document.model.MunstalkGlobalAvatar;
+
 /**
  * @author abuabdul
  *
  */
 public interface MunstalkDAO {
+
+	List<MunstalkGlobalAvatar> findGlobalAvatar();
+
+	void saveGlobalAvatar(MunstalkGlobalAvatar avatar);
 
 }

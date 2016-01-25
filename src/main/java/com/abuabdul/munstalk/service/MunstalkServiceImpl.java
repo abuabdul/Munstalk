@@ -16,7 +16,10 @@
  */
 package com.abuabdul.munstalk.service;
 
+import java.util.List;
+
 import com.abuabdul.munstalk.dao.MunstalkDAO;
+import com.abuabdul.munstalk.document.model.MunstalkGlobalAvatar;
 
 /**
  * @author abuabdul
@@ -28,6 +31,16 @@ public class MunstalkServiceImpl implements MunstalkService {
 
 	public MunstalkServiceImpl(MunstalkDAO munstalkDAO) {
 		this.munstalkDAO = munstalkDAO;
+	}
+
+	@Override
+	public List<MunstalkGlobalAvatar> fetchGlobalAvatar() {
+		return munstalkDAO.findGlobalAvatar();
+	}
+
+	@Override
+	public void enrollGlobalAvatar(MunstalkGlobalAvatar avatar) {
+		munstalkDAO.saveGlobalAvatar(avatar);
 	}
 
 }

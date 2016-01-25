@@ -16,10 +16,18 @@
  */
 package com.abuabdul.munstalk.service;
 
+import java.util.List;
+
+import com.abuabdul.munstalk.document.model.MunstalkGlobalAvatar;
+
 /**
  * @author abuabdul
  *
  */
 public interface MunstalkService {
+
+	List<MunstalkGlobalAvatar> fetchGlobalAvatar();
+
+	void enrollGlobalAvatar(MunstalkGlobalAvatar avatar);
 
 }

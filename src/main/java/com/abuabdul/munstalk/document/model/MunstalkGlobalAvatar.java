@@ -16,22 +16,46 @@
  */
 package com.abuabdul.munstalk.document.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 /**
  * @author abuabdul
  *
  */
+@Document(collection = MunstalkGlobalAvatar.GLOBAL_AVATAR)
 public class MunstalkGlobalAvatar {
 
-	private boolean munsRepresentation;
-	private boolean abuRepresentation;
+	public static final String GLOBAL_AVATAR = "GlobalAvatar";
+
+	@Id
+	private String id;
+
+	private String munsRepresentation;
+	private String abuRepresentation;
 
 	public MunstalkGlobalAvatar() {
 	}
 
 	/**
+	 * @return the id
+	 */
+	public String getId() {
+		return id;
+	}
+
+	/**
+	 * @param id
+	 *            the id to set
+	 */
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	/**
 	 * @return the munsRepresentation
 	 */
-	public boolean isMunsRepresentation() {
+	public String getMunsRepresentation() {
 		return munsRepresentation;
 	}
 
@@ -39,14 +63,14 @@ public class MunstalkGlobalAvatar {
 	 * @param munsRepresentation
 	 *            the munsRepresentation to set
 	 */
-	public void setMunsRepresentation(boolean munsRepresentation) {
+	public void setMunsRepresentation(String munsRepresentation) {
 		this.munsRepresentation = munsRepresentation;
 	}
 
 	/**
 	 * @return the abuRepresentation
 	 */
-	public boolean isAbuRepresentation() {
+	public String getAbuRepresentation() {
 		return abuRepresentation;
 	}
 
@@ -54,8 +78,7 @@ public class MunstalkGlobalAvatar {
 	 * @param abuRepresentation
 	 *            the abuRepresentation to set
 	 */
-	public void setAbuRepresentation(boolean abuRepresentation) {
+	public void setAbuRepresentation(String abuRepresentation) {
 		this.abuRepresentation = abuRepresentation;
 	}
-
 }
