@@ -24,6 +24,16 @@
 		<url-pattern>*.go</url-pattern>
 	</servlet-mapping>
 	
+	<filter>
+	   <filter-name>springSecurityFilterChain</filter-name>
+	   <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	
+	<filter-mapping>
+	   <filter-name>springSecurityFilterChain</filter-name>
+	   <url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
 	<!-- Session timeout for munstalk portal in minutes -->
 	<session-config>
 	  <session-timeout>1439</session-timeout>
