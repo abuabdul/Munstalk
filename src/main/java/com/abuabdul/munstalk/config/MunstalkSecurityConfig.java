@@ -22,4 +22,8 @@ package com.abuabdul.munstalk.config;
  */
 public class MunstalkSecurityConfig {
 
+    @Override
+	protected void configure(HttpSecurity http) throws Exception {
+	}
+	
 }
