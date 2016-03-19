@@ -21,9 +21,15 @@ package com.abuabdul.munstalk.config;
  *
  */
 public class MunstalkSecurityConfig {
-
-    @Override
+        
+  @Override
+  public void configure(WebSecurity web) throws Exception {
+    web.ignoring().antMatchers("/resources/**");
+  }
+   
+        @Override
 	protected void configure(HttpSecurity http) throws Exception {
+		htt.p
 	}
 	
 }
