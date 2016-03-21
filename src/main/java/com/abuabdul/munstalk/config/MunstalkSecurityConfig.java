@@ -16,19 +16,23 @@
  */
 package com.abuabdul.munstalk.config;
 
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
 /**
  * @author abuabdul
  *
  */
-public class MunstalkSecurityConfig {
-        
+public class MunstalkSecurityConfig extends WebSecurityConfigurerAdapter {
+
 	@Override
 	public void configure(WebSecurity web) throws Exception {
-	    web.ignoring().antMatchers("/resources/**");
+		web.ignoring().antMatchers("/resources/**");
 	}
-   
-        @Override
+
+	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 	}
-	
+
 }
